@@ -34,7 +34,7 @@ export async function registerRoutes(
       if (process.env.RESEND_API_KEY) {
         await resend.emails.send({
           from: 'Gloop Club <onboarding@resend.dev>',
-          to: 'delivered@resend.dev', // In a real app, this would be the user's email
+          to: 'gloopclubs@gmail.com', // In a real app, this would be the user's email
           subject: 'New X Submission',
           html: `<p><strong>X Username:</strong> ${data.twitterHandle}</p><p><strong>Quote/Thread:</strong> ${data.quoteContent}</p>`
         });
