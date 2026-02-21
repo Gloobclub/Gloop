@@ -20,7 +20,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
            <img 
-             src="/images/20260218_060937_1771391580308.jpg" 
+             src="/images/20260218_060937.jpg" 
              alt="Gloop Logo" 
              className="w-10 h-10 rounded-full border border-white/10 group-hover:border-primary/50 transition-colors object-cover"
            />
