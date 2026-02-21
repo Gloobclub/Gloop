@@ -22,9 +22,9 @@ const twitterFormSchema = z.object({
 type TwitterFormValues = z.infer<typeof twitterFormSchema>;
 
 const FEATURED_IMAGES = [
-  "/images/IMG-20260217-WA0012_1771391580443.jpg",
-  "/images/IMG-20260217-WA0016_1771391580361.jpg",
-  "/images/IMG-20260217-WA0015_1771391580529.jpg"
+  "/images/IMG-20260217-WA0012.jpg",
+  "/images/IMG-20260217-WA0016.jpg",
+  "/images/IMG-20260217-WA0015.jpg"
 ];
 
 export default function Home() {
