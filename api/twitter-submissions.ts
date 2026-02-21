@@ -1,7 +1,9 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { drizzle } from "drizzle-orm/node-postgres";
-import pg from "pg";
 import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
+import pg from "pg";
+import { Resend } from "resend";
+import { z } from "zod";
 
 const twitterSubmissions = pgTable("twitter_submissions", {
   id: serial("id").primaryKey(),
@@ -9,8 +11,6 @@ const twitterSubmissions = pgTable("twitter_submissions", {
   quoteContent: text("quote_content").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
-import { Resend } from "resend";
-import { z } from "zod";
 
 const { Pool } = pg;
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
