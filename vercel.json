@@ -13,8 +13,9 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "/api/twitter-submissions",
+      "dest": "/api/twitter-submissions.ts",
+      "methods": ["POST"]
     },
     {
       "src": "/(.*)",
