@@ -45,36 +45,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
   }
   return res.status(405).end();
-}
-Then update vercel.json to add the new route:
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.ts",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/public" }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/twitter-submissions",
-      "dest": "/api/twitter-submissions.ts"
-    },
-    {
-      "src": "/api/submissions",
-      "dest": "/api/submissions.ts"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
-  ]
-}
+                 }
