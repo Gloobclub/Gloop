@@ -1,7 +1,14 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
-import { twitterSubmissions } from "../shared/schema";
+import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
+
+const twitterSubmissions = pgTable("twitter_submissions", {
+  id: serial("id").primaryKey(),
+  twitterHandle: text("twitter_handle").notNull(),
+  quoteContent: text("quote_content").notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
+});
 import { Resend } from "resend";
 import { z } from "zod";
 
