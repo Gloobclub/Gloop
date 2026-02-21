@@ -17,6 +17,10 @@
       "dest": "/api/twitter-submissions.ts"
     },
     {
+      "src": "/api/submissions",
+      "dest": "/api/submissions.ts"
+    },
+    {
       "handle": "filesystem"
     },
     {
