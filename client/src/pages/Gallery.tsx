@@ -9,11 +9,11 @@ import { Badge } from "@/components/ui/badge";
 
 // Fallback images if API has no data yet
 const PLACEHOLDERS = [
-  { id: 101, title: "Floating Dreams", imageUrl: "/images/IMG-20260217-WA0012_1771391580443.jpg", twitterHandle: "@artist_one" },
-  { id: 102, title: "Neon Swing", imageUrl: "/images/IMG-20260217-WA0013_1771391580391.jpg", twitterHandle: "@cyber_punk" },
-  { id: 103, title: "Workspace Zen", imageUrl: "/images/IMG-20260217-WA0014_1771391580488.jpg", twitterHandle: "@lofi_beats" },
-  { id: 104, title: "Fast Food Future", imageUrl: "/images/IMG-20260217-WA0015_1771391580529.jpg", twitterHandle: "@mc_future" },
-  { id: 105, title: "Glow Stare", imageUrl: "/images/IMG-20260217-WA0016_1771391580361.jpg", twitterHandle: "@neon_gaze" },
+  { id: 101, title: "Floating Dreams", imageUrl: "/images/IMG-20260217-WA0012.jpg", twitterHandle: "@artist_one" },
+  { id: 102, title: "Neon Swing", imageUrl: "/images/IMG-20260217-WA0013.jpg", twitterHandle: "@cyber_punk" },
+  { id: 103, title: "Workspace Zen", imageUrl: "/images/IMG-20260217-WA0014.jpg", twitterHandle: "@lofi_beats" },
+  { id: 104, title: "Fast Food Future", imageUrl: "/images/IMG-20260217-WA0015.jpg", twitterHandle: "@mc_future" },
+  { id: 105, title: "Glow Stare", imageUrl: "/images/IMG-20260217-WA0016.jpg", twitterHandle: "@neon_gaze" },
 ];
 
 export default function Gallery() {
